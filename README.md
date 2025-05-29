@@ -13,11 +13,12 @@ Esta es una aplicación móvil desarrollada con **Flutter** que permite calcular
 ## 🎯 Objetivo
 
 Calcular el IMC a partir de la siguiente fórmula:
+
 ```
 
 IMC = peso (kg) / (altura (m) \* altura (m))
 
-````
+```
 
 `Home Screen`
 
@@ -27,13 +28,16 @@ IMC = peso (kg) / (altura (m) \* altura (m))
 
 ![resultScreen](assets/images/resultScreenShot.png)
 
+---
+
 ## 🚀 Cómo usar
 
 1. Clona este repositorio:
+
    ```bash
    git clone https://github.com/CUBOVR/imcCalculator.git
    cd imcCalculator
-````
+   ```
 
 2. Instala las dependencias:
 
@@ -54,22 +58,24 @@ IMC = peso (kg) / (altura (m) \* altura (m))
 
 ## 📁 Estructura del proyecto (simplificada)
 
-```
+---
+
 lib/
 ├── main.dart
 ├── screens/
-│   ├── imc_homeScreen.dart
-│   └── imc_resultScreen.dart
+│ ├── imc_homeScreen.dart
+│ └── imc_resultScreen.dart
 ├── components/
-│   ├── genderSelector.dart
-│   ├── heightSelector.dart
-│   ├── numberSelector.dart
-│   └── bottom_button.dart
+│ ├── genderSelector.dart
+│ ├── heightSelector.dart
+│ ├── numberSelector.dart
+│ └── bottom_button.dart
 └── core/
-    ├── app_colors.dart
-    ├── button_styles.dart
-    └── text_styles.dart
-```
+├── app_colors.dart
+├── button_styles.dart
+└── text_styles.dart
+
+---
 
 ## 📌 Notas
 
@@ -82,7 +88,3 @@ Desarrollado por \[CUBOVR]
 ---
 
 ¡Gracias por usar esta aplicación! Si tienes sugerencias o encuentras algún error, no dudes en abrir un issue o enviar un pull request.
-
-```
-
-```
