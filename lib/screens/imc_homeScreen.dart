@@ -3,7 +3,9 @@ import 'package:imc_calculator/components/genderSelector.dart';
 import 'package:imc_calculator/components/heightSelector.dart';
 import 'package:imc_calculator/components/numberSelector.dart';
 import 'package:imc_calculator/core/app_colors.dart';
+import 'package:imc_calculator/core/button_styles.dart';
 import 'package:imc_calculator/core/text_styles.dart';
+import 'package:imc_calculator/screens/imc_resultScreen.dart';
 
 class ImcHomescreen extends StatefulWidget {
   const ImcHomescreen({super.key});
@@ -77,15 +79,19 @@ class _ImcHomescreenState extends State<ImcHomescreen> {
             height: 60,
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
-              style: ButtonStyle(
-                shape: WidgetStateProperty.all(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder:
+                        (context) => ImcResultscreen(
+                          height: selectedHeight,
+                          weight: selectedWeight,
+                        ),
                   ),
-                ),
-                backgroundColor: WidgetStateProperty.all(AppColors.primary),
-              ),
+                );
+              },
+              style: ButtonStyles.infinityStyle,
               child: Text("Calcular", style: TextStyles.bodyText),
             ),
           ),
